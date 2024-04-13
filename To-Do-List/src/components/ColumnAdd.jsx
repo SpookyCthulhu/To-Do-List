@@ -4,7 +4,7 @@ import AddButton from './AddButton';
 
 function ColumnAdd(){
 
-	const [cards, setCards] = useState([<Card key={0} />]);
+	const [cards, setCards] = useState([]);
 	const [title, setTitle] = useState('');
 	const [description, setDescription] = useState('');
 	
@@ -17,21 +17,24 @@ function ColumnAdd(){
 
 	return (
 		<div className='column'>
-			<div className='input-fields'>
-				<input
-					type='text'
-					placeholder='task title'
-					value={title}
-					onChange={(e) => setTitle(e.target.value)}
-				/>
-				<textarea
-					placeholder='Text Description'
-					value={description}
-					onChange={(e) => setDescription(e.target.value)}
-				></textarea>
+			<div className='card'>
+				<div className='fieldinputs'>
+					<input
+						type='text'
+						placeholder='task title'
+						value={title}
+						onChange={(e) => setTitle(e.target.value)}
+					/>
+					<textarea
+						placeholder='Text Description'
+						value={description}
+						onChange={(e) => setDescription(e.target.value)}
+					></textarea>
+				</div>
+				<AddButton onClick={addCard} />
 			</div>
 			{cards.map((card, index) => card)}
-			<AddButton onClick={addCard} />
+
 		</div>
 	)
 }
