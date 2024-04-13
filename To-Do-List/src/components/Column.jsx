@@ -1,6 +1,6 @@
 function Column({children}){
 	return (
-		<div class='column'>
+		<div className='column'>
 			{children}
 		</div>
 	)

@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import Card from './components/Card'
-import Column from './components/Column'
 import ColumnAdd from './components/ColumnAdd'
 
 function App() {
