@@ -1,0 +1,49 @@
+#root {
+	width: 90vw;
+	max-width: 1280px;
+	height: auto;
+}
+
+body {
+	background-color: #DACAC4;
+	color: black;
+	font-size: 2vw;
+	text-align: center;
+	justify-content: center;
+}
+
+h1 {
+	color: black;
+}
+
+.card {
+	background-color: #F9F6F0;
+
+	position: relative;
+	width: 100%;
+  padding: 2vw;
+  margin: 1vw auto;
+  border: 2px solid black;
+  border-radius: 4vw;
+  box-shadow: 1vw 1vw #877785;
+  box-sizing:border-box;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 2vw;
+}
+
+.addbutton {
+	background-color: #DAE7DD;
+	width: 20%;
+	border: 2px solid black;
+	padding: 2vw;
+	margin: 1vw auto;
+	border-radius: 10vw;
+	box-shadow: 1vw 1vw #877785;
+	box-sizing: border-box;
+}
