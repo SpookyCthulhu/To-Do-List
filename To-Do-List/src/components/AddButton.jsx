@@ -1,9 +1,7 @@
-import React from 'react';
-
 function AddButton({ onClick }) {
 	return (
-		<div class='addbutton' onClick={onClick}>
-			Add task
+		<div className='addbutton' onClick={onClick}>
+			Add Task
 		</div>
 	);
 }
