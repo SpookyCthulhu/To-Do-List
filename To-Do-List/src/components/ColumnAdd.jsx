@@ -9,11 +9,25 @@ function ColumnAdd(){
 	const [description, setDescription] = useState('');
 	
 	const addCard = () => {
-		const newCard = <Card key={cards.length} title={title} description={description} />
+		const newCard = (
+			<Card 
+				key={cards.length} 
+				title={title} 
+				description={description} 
+				onDelete={() => handleDelete(cards.length)}
+			/>
+		);
 		setCards([...cards, newCard]);
 		setTitle('');
 		setDescription('');
 	};
+	
+	
+  const handleDelete = (index) => {
+    const updatedCards = [...cards];
+    updatedCards.splice(index, 1);
+    setCards(updatedCards);
+  };
 
 	return (
 		<div className='column'>

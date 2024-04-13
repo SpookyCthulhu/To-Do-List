@@ -1,9 +1,9 @@
-function AddButton() {
+function DelButton({ onDelete }) {
 	return (
-		<div className='delbutton'>
-			Delete Task
+		<div className='delbutton' onClick={onDelete}>
+			Delete
 		</div>
 	);
 }
 
-export default AddButton; 
+export default DelButton; 
